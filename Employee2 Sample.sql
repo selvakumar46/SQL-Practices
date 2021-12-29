@@ -125,6 +125,8 @@ insert into employee values(20,'SIVA','PILLAI','SIVA@gmail.com',9845612458,'02-0
 insert into employee values(21,'THANA','RATHINAM','PRAGHA@gmail.com',9865478963,'03-06-2013',14148,'01-05-1994',2);
 insert into employee values(22,'YOGESH','SINGH','PRADEEP@gmail.com',8604527865,'02-06-2013',20348,'23-12-1991',3);
 insert into employee values(23,'VIDYA','SINGH','PERICHI@gmail.com',9842578910,'02-09-2014',21780,'16-08-1993',4);
+insert into employee(id,first_name,email,salary) values(24,'VIDYA','PERICHI@gmail.com',21780);
+
 
 SELECT * FROM employee;
 
@@ -174,4 +176,6 @@ SELECT first_name from employee where department_id=1;
 --Display only the country names that have atleast one department located in
 --it.(Q19).
 
-
+select first_name,phone_number from employee where phone_number is null;
+SELECT * FROM employee
+FETCH FIRST 3 ROWS ONLY;
